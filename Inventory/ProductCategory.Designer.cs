@@ -37,16 +37,12 @@
             this.categoryName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.categoryID = new System.Windows.Forms.TextBox();
-            this.categoryIDLab = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.categoryIDLab);
-            this.panel1.Controls.Add(this.categoryID);
             this.panel1.Controls.Add(this.categoryDescription);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label2);
@@ -63,11 +59,12 @@
             // 
             this.categoryDescription.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.categoryDescription.ForeColor = System.Drawing.Color.SteelBlue;
-            this.categoryDescription.Location = new System.Drawing.Point(232, 268);
+            this.categoryDescription.Location = new System.Drawing.Point(232, 239);
             this.categoryDescription.Multiline = true;
             this.categoryDescription.Name = "categoryDescription";
-            this.categoryDescription.Size = new System.Drawing.Size(408, 157);
+            this.categoryDescription.Size = new System.Drawing.Size(408, 186);
             this.categoryDescription.TabIndex = 8;
+            this.categoryDescription.TextChanged += new System.EventHandler(this.categoryDescription_TextChanged);
             // 
             // textBox2
             // 
@@ -82,7 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(232, 237);
+            this.label2.Location = new System.Drawing.Point(232, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 28);
             this.label2.TabIndex = 6;
@@ -119,7 +116,7 @@
             // 
             this.categoryName.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.categoryName.ForeColor = System.Drawing.Color.SteelBlue;
-            this.categoryName.Location = new System.Drawing.Point(232, 165);
+            this.categoryName.Location = new System.Drawing.Point(232, 100);
             this.categoryName.Name = "categoryName";
             this.categoryName.Size = new System.Drawing.Size(408, 39);
             this.categoryName.TabIndex = 1;
@@ -129,7 +126,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(232, 134);
+            this.label3.Location = new System.Drawing.Point(232, 50);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(149, 28);
             this.label3.TabIndex = 0;
@@ -144,25 +141,6 @@
             this.label1.Size = new System.Drawing.Size(365, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "Add Product Category";
-            // 
-            // categoryID
-            // 
-            this.categoryID.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.categoryID.ForeColor = System.Drawing.Color.SteelBlue;
-            this.categoryID.Location = new System.Drawing.Point(232, 60);
-            this.categoryID.Name = "categoryID";
-            this.categoryID.Size = new System.Drawing.Size(408, 39);
-            this.categoryID.TabIndex = 9;
-            // 
-            // categoryIDLab
-            // 
-            this.categoryIDLab.AutoSize = true;
-            this.categoryIDLab.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.categoryIDLab.Location = new System.Drawing.Point(232, 29);
-            this.categoryIDLab.Name = "categoryIDLab";
-            this.categoryIDLab.Size = new System.Drawing.Size(116, 28);
-            this.categoryIDLab.TabIndex = 10;
-            this.categoryIDLab.Text = "Category ID";
             // 
             // ProductCategory
             // 
@@ -192,7 +170,5 @@
         private TextBox textBox2;
         private Label label2;
         private TextBox categoryDescription;
-        private TextBox categoryID;
-        private Label categoryIDLab;
     }
 }

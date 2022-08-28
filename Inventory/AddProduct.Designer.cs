@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.productCategory = new System.Windows.Forms.ComboBox();
             this.prodQty = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.addProdBtn = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.prodExpiryDate = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.prodPrice = new System.Windows.Forms.TextBox();
@@ -53,6 +53,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.productCategory);
             this.panel1.Controls.Add(this.prodQty);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.addProdBtn);
@@ -60,7 +61,6 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.prodExpiryDate);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.prodPrice);
@@ -74,6 +74,19 @@
             this.panel1.Size = new System.Drawing.Size(1025, 619);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // productCategory
+            // 
+            this.productCategory.ForeColor = System.Drawing.Color.SteelBlue;
+            this.productCategory.FormattingEnabled = true;
+            this.productCategory.Items.AddRange(new object[] {
+            "Beverage",
+            "Vegetable"});
+            this.productCategory.Location = new System.Drawing.Point(564, 348);
+            this.productCategory.Name = "productCategory";
+            this.productCategory.Size = new System.Drawing.Size(404, 31);
+            this.productCategory.TabIndex = 19;
+            this.productCategory.SelectedIndexChanged += new System.EventHandler(this.productCategory_SelectedIndexChanged);
             // 
             // prodQty
             // 
@@ -150,23 +163,15 @@
             this.label6.Text = "Product Expiry Date";
             this.label6.UseWaitCursor = true;
             // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(564, 343);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(404, 32);
-            this.textBox3.TabIndex = 10;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(564, 313);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 23);
+            this.label5.Size = new System.Drawing.Size(144, 23);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Product Quantity";
+            this.label5.Text = "Product Category";
             this.label5.UseWaitCursor = true;
             // 
             // label4
@@ -272,7 +277,6 @@
 
         private Panel panel1;
         private Label label1;
-        private TextBox textBox3;
         private Label label5;
         private Label label4;
         private TextBox prodPrice;
@@ -288,5 +292,6 @@
         private Label label6;
         private Button button1;
         private NumericUpDown prodQty;
+        private ComboBox productCategory;
     }
 }

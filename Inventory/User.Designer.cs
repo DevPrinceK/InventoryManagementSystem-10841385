@@ -104,6 +104,7 @@
             this.userPassword.Name = "userPassword";
             this.userPassword.Size = new System.Drawing.Size(346, 34);
             this.userPassword.TabIndex = 16;
+            this.userPassword.UseSystemPasswordChar = true;
             // 
             // label7
             // 

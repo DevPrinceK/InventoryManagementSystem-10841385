@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Inventory
 {
@@ -52,18 +53,36 @@ namespace Inventory
 
         private void addProdBtn_Click(object sender, EventArgs e)
         {
-            string name = prodName.Text;
-            string price = prodPrice.Text;
-            string description = prodDescription.Text;
-            string expiry = prodExpiryDate.Text;
-            string tags = prodTags.Text;
-            string quantity = prodQty.Text;
+            if (prodName.Text != "" && prodExpiryDate.Text != "" && prodPrice.Text != "")
+            {
+                // My sql connections
+                DBCON.OpenConnection();
+                MySqlCommand cmd;
+                try
+                {
+                    string query = "INSERT INTO product(name, category, price, quantity, description, expiryDate, tags) values ('" + prodName.Text + "',  '" + productCategory.Text + "', '" + prodPrice.Text + "', '" + prodQty.Text + "', '" + prodDescription.Text + "', '" + prodExpiryDate.MaxDate + "',  '" + prodTags.Text +"')";
+                    cmd = new MySqlCommand(query, DBCON.conn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("New Product Created Successfully!");
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    DBCON.CloseConnection();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Product Name, Expiry date and Price fields must not be empty.");
+            }
 
-            DBCON db = new DBCON();
+        }
 
-            
-
-           
+        private void productCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
