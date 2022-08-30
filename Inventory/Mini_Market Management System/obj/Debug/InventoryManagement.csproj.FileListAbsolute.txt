@@ -1,0 +1,16 @@
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\InventoryManagement.csproj.AssemblyReference.cache
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\InventoryManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market Management System.exe.config
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\InventoryManagement.adminForm.resources
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market_Management_System.AttendantForm.resources
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market_Management_System.CategoryForm.resources
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market_Management_System.LoginForm.resources
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market_Management_System.ProductForm.resources
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market_Management_System.Properties.Resources.resources
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market_Management_System.SellerForm.resources
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market_Management_System.SellingForm.resources
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market_Management_System.SpalshForm.resources
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\InventoryManagement.csproj.GenerateResource.cache
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\InventoryManagement.csproj.CoreCompileInputs.cache
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market Management System.exe
+C:\Users\Emmanuel\Desktop\Moses_Market Management System\Moses_Market Management System\Mini_Market Management System\obj\Debug\Moses_Market Management System.pdb
