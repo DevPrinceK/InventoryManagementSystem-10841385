@@ -13,10 +13,20 @@ An Inventory Management System for Shopright Ghana. Programming 2 assignment.
 A desktop app (using C# winform) for shopright ghana. The app offers platform for two category of users (Administrators and Attendants) to manage inventory in Shopright Ghana. <br/>
 
 # Features
-1. All users can login into the system. <br/>
-2. Administrators can add new attendants. <br/>
-3. Administrators can edit existing attendants. <br/>
-4. Administrators can delete attendants. <br/>
-5. Administrators can add products <br/>
-6. Administrators can edit products. <br/>
-7. Administrators can delete products. <br/>
+a. Authentication <br/>
+  1. All users can login into the system. <br/>
+  
+b. User management 
+  1. Administrators can add new attendants. <br/>
+  2. Administrators can edit existing attendants. <br/>
+  3. Administrators can delete attendants. <br/>
+
+c. Product management
+  1. Administrators can add products <br/>
+  2. Administrators can edit products. <br/>
+  3. Administrators can delete products. <br/>
+  
+d. Sales management
+  1. Administrators can open sales <br/>
+  2. Attendants can open sales <br/>
+  3. 
