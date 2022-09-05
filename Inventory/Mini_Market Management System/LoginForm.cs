@@ -13,6 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Xml.Linq;
 using System.Drawing.Text;
 using System.Security.Cryptography.X509Certificates;
+using InventoryManagement;
 
 namespace Moses_Market_Management_System
 {

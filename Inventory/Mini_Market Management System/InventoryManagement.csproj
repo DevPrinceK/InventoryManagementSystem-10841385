@@ -7,7 +7,7 @@
     <ProjectGuid>{DCAD1A22-F46F-45EF-A6DC-E5DF57595059}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Moses_Market_Management_System</RootNamespace>
-    <AssemblyName>Moses_Market Management System</AssemblyName>
+    <AssemblyName>Moses_Market_Management_System</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -96,11 +96,11 @@
     <Compile Include="SellingForm.Designer.cs">
       <DependentUpon>SellingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SpalshForm.cs">
+    <Compile Include="SplashForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SpalshForm.Designer.cs">
-      <DependentUpon>SpalshForm.cs</DependentUpon>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="adminForm.resx">
       <DependentUpon>adminForm.cs</DependentUpon>
@@ -133,8 +133,8 @@
     <EmbeddedResource Include="SellingForm.resx">
       <DependentUpon>SellingForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SpalshForm.resx">
-      <DependentUpon>SpalshForm.cs</DependentUpon>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

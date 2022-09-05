@@ -1,7 +1,7 @@
 ﻿
 namespace Moses_Market_Management_System
 {
-    partial class SpalshForm
+    partial class SplashForm
     {
         /// <summary>
         /// Required designer variable.

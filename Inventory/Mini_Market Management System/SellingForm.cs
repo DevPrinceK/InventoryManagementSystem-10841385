@@ -64,7 +64,7 @@ namespace Moses_Market_Management_System
         private void DataGridView_product_Click(object sender, EventArgs e)
         {
             name.Text = DataGridView_product.SelectedRows[0].Cells[0].Value.ToString();
-            price.Text = DataGridView_product.SelectedRows[0].Cells[1].Value.ToString();
+            productPrice.Text = DataGridView_product.SelectedRows[0].Cells[1].Value.ToString();
         }
 
         int grandTotal = 0, n = 0;
@@ -116,7 +116,7 @@ namespace Moses_Market_Management_System
 
         private void comboBox_category_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            string selectQuerry = "SELECT ProdName, ProdPrice FROM Product WHERE ProdCat='" + comboBox_category.SelectedValue.ToString() + "'";
+            string selectQuerry = "SELECT ProdName, ProdPrice, description FROM Product WHERE ProdCat='" + comboBox_category.SelectedValue.ToString() + "'";
             MySqlCommand command = new MySqlCommand(selectQuerry, dBCon.GetCon());
             MySqlDataAdapter adapter = new MySqlDataAdapter(command);
             DataTable table = new DataTable();
@@ -129,28 +129,18 @@ namespace Moses_Market_Management_System
 
         }
 
+        private void dataGridView_order_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void button_addOrder_Click(object sender, EventArgs e)
         {
-            if(name.Text != "" && productPrice.Text != "" && quantity.Text != "")
-            {
-                try
-                {
-                    private int total = 0;
-                    private int price = Int32.Parse(productPrice.Text);
-
-                    string insertQuery = "INSERT INTO sales(product, price, quantity, total) VALUES('" + name.Text + "', '" + pproductPricerice.Text + "', '" + quantity.Text + "', '" + total + "')";
-                    MySqlCommand command = new MySqlCommand(insertQuery, dBCon.GetCon());
-                    dBCon.OpenCon();
-                    command.ExecuteNonQuery();
-                    MessageBox.Show("Sales Item Added Successfully", "Add Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    dBCon.CloseCon();
-                    getTable();
-                    clear();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+            if (name.Text != "" && productPrice.Text != "" && quantity.Text != "")
+            { }
+                
         }
     }
 }
+
+

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Moses_Market_Management_System
 {
-    public partial class SpalshForm : Form
+    public partial class SplashForm : Form
     {
-        public SpalshForm()
+        public SplashForm()
         {
             InitializeComponent();
         }

@@ -1,4 +1,4 @@
-﻿namespace Moses_Market_Management_System
+﻿namespace InventoryManagement
 {
     partial class adminForm
     {
